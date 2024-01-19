@@ -1,0 +1,139 @@
+@use "./variables" as *;
+@use "./reset";
+
+body {
+  background-color: $lGBlue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+
+  padding: 70px 6vw 100px 6vw;
+
+  main {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    .purple,
+    .grey,
+    .white,
+    .black,
+    .right-container {
+      background-color: $violet;
+      border-radius: 10px;
+      padding: 24px;
+
+      color: $light;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      position: relative;
+
+      .bg {
+        position: absolute;
+        top: 0;
+        right: 20px;
+
+        z-index: 0;
+      }
+
+      .profile-container {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        img {
+          border-radius: 100px;
+          width: 32px;
+
+          border: 2.5px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .profile-info {
+          display: flex;
+          flex-direction: column;
+
+          h2 {
+            font-size: 14px;
+          }
+
+          p {
+            font-size: 12px;
+            color: $lGray;
+            max-width: 100%;
+          }
+        }
+      }
+
+      h1 {
+        font-size: 20px;
+        line-height: 1.2;
+
+        max-width: 92.5%;
+
+        position: relative;
+        z-index: 1;
+      }
+
+      p {
+        font-size: 14px;
+        color: $lGray;
+
+        max-width: 92.6%;
+      }
+    }
+
+    .grey {
+      background-color: $gBlue;
+    }
+
+    .white,
+    .right-container {
+      background-color: $light;
+      color: $gBlue;
+
+      .profile-container {
+        .profile-info {
+          p {
+            color: $gBlue;
+            opacity: 0.6;
+          }
+        }
+      }
+
+      p {
+        color: $gBlue;
+        opacity: 0.6;
+      }
+    }
+
+    .black {
+      background-color: $bBlue;
+    }
+
+    .left-container {
+      display: flex;
+      flex-direction: column;
+
+      gap: 30px;
+
+      .top-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .bottom-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  }
+}

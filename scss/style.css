@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 70px 6vw 100px 6vw;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body main .purple,
+body main .grey,
+body main .white,
+body main .black,
+body main .right-container {
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 10px;
+  padding: 24px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+body main .purple .bg,
+body main .grey .bg,
+body main .white .bg,
+body main .black .bg,
+body main .right-container .bg {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 0;
+}
+body main .purple .profile-container,
+body main .grey .profile-container,
+body main .white .profile-container,
+body main .black .profile-container,
+body main .right-container .profile-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+body main .purple .profile-container img,
+body main .grey .profile-container img,
+body main .white .profile-container img,
+body main .black .profile-container img,
+body main .right-container .profile-container img {
+  border-radius: 100px;
+  width: 32px;
+  border: 2.5px solid rgba(255, 255, 255, 0.25);
+}
+body main .purple .profile-container .profile-info,
+body main .grey .profile-container .profile-info,
+body main .white .profile-container .profile-info,
+body main .black .profile-container .profile-info,
+body main .right-container .profile-container .profile-info {
+  display: flex;
+  flex-direction: column;
+}
+body main .purple .profile-container .profile-info h2,
+body main .grey .profile-container .profile-info h2,
+body main .white .profile-container .profile-info h2,
+body main .black .profile-container .profile-info h2,
+body main .right-container .profile-container .profile-info h2 {
+  font-size: 14px;
+}
+body main .purple .profile-container .profile-info p,
+body main .grey .profile-container .profile-info p,
+body main .white .profile-container .profile-info p,
+body main .black .profile-container .profile-info p,
+body main .right-container .profile-container .profile-info p {
+  font-size: 12px;
+  color: hsl(0, 0%, 81%);
+  max-width: 100%;
+}
+body main .purple h1,
+body main .grey h1,
+body main .white h1,
+body main .black h1,
+body main .right-container h1 {
+  font-size: 20px;
+  line-height: 1.2;
+  max-width: 92.5%;
+  position: relative;
+  z-index: 1;
+}
+body main .purple p,
+body main .grey p,
+body main .white p,
+body main .black p,
+body main .right-container p {
+  font-size: 14px;
+  color: hsl(0, 0%, 81%);
+  max-width: 92.6%;
+}
+body main .grey {
+  background-color: hsl(217, 19%, 35%);
+}
+body main .white,
+body main .right-container {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+body main .white .profile-container .profile-info p,
+body main .right-container .profile-container .profile-info p {
+  color: hsl(217, 19%, 35%);
+  opacity: 0.6;
+}
+body main .white p,
+body main .right-container p {
+  color: hsl(217, 19%, 35%);
+  opacity: 0.6;
+}
+body main .black {
+  background-color: hsl(219, 29%, 14%);
+}
+body main .left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body main .left-container .top-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body main .left-container .bottom-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}/*# sourceMappingURL=style.css.map */
