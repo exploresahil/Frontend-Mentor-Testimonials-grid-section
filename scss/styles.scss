@@ -15,7 +15,6 @@ body {
   main {
     display: flex;
     flex-direction: column;
-
     gap: 30px;
 
     .purple,
@@ -133,6 +132,56 @@ body {
         display: flex;
         flex-direction: column;
         gap: 30px;
+      }
+    }
+  }
+}
+
+/* 
+//-------> Tablets
+
+@media screen and (min-width: 820px) {
+
+}
+ */
+
+//-------> Desktop
+
+@media screen and (min-width: 1025px) {
+  body {
+    padding: 150px 12vw;
+
+    main {
+      flex-direction: row;
+      .left-container {
+        width: 75%;
+        .top-container {
+          flex-direction: row;
+        }
+
+        .bottom-container {
+          flex-direction: row;
+        }
+      }
+
+      .right-container {
+        width: 25%;
+      }
+
+      .purple,
+      .grey,
+      .white,
+      .black,
+      .right-container {
+        p {
+          opacity: 0.5;
+        }
+      }
+
+      .purple {
+        .bg {
+          right: 80px;
+        }
       }
     }
   }

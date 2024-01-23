@@ -146,3 +146,41 @@ body main .left-container .bottom-container {
   flex-direction: column;
   gap: 30px;
 }
+
+/* 
+//-------> Tablets
+
+@media screen and (min-width: 820px) {
+
+}
+ */
+@media screen and (min-width: 1025px) {
+  body {
+    padding: 150px 12vw;
+  }
+  body main {
+    flex-direction: row;
+  }
+  body main .left-container {
+    width: 75%;
+  }
+  body main .left-container .top-container {
+    flex-direction: row;
+  }
+  body main .left-container .bottom-container {
+    flex-direction: row;
+  }
+  body main .right-container {
+    width: 25%;
+  }
+  body main .purple p,
+  body main .grey p,
+  body main .white p,
+  body main .black p,
+  body main .right-container p {
+    opacity: 0.5;
+  }
+  body main .purple .bg {
+    right: 80px;
+  }
+}
